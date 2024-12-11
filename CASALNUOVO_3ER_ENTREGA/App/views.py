@@ -3,14 +3,17 @@ from django.shortcuts import render
 # Create your views here.
 from django.http import HttpResponse
 
+def Inicio(request) :
+    return render (request, "App/Inicio.html")
+
 def Cliente(request) :
-    return HttpResponse ("Vista Cliente")
+    return render (request, "App/Cliente.html")
 
 def Sku(request) :
-    return HttpResponse ("Vista Sku")
+    return render (request, "App/Sku.html")
 
 def Stock(request) :
-    return HttpResponse ("Vista Stock")
+    return render (request, "App/Stock.html")
 
 def Factura(request) :
-    return HttpResponse ("Vista factura")
+    return render (request, "App/Factura.html")
