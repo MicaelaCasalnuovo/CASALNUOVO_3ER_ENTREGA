@@ -24,11 +24,12 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#!">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Stock</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Sku</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Cliente</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Factura</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Inicio' %}">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Stock' %}">Stock</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Sku' %}">Sku</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Cliente' %}">Cliente</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Factura' %}">Factura</a></li>
+
                     </ul>
                 </div>
             </div>

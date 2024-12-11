@@ -10,13 +10,12 @@ class Cliente(models.Model):
 class Sku(models.Model):
     sku = models.IntegerField()  
     descripcion = models.CharField(max_length=30)
-    precio = models.IntegerField()
-
-
+    
 class Stock(models.Model):
-    sku = models.IntegerField()  
+    sku = models.IntegerField() 
+    descripcion = models.CharField(max_length=30)
     cantidad = models.IntegerField()
-
+    recio = models.IntegerField()
 
 class Factura(models.Model):
     fecha_fc = models.DateField()
